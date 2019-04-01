@@ -1,0 +1,90 @@
+@media (max-width: 1100px)
+  body
+    flex-direction: column
+    justify-content: center
+    align-items: center
+    .menu
+      width: 580px
+      height: 205px
+      &__list
+        display: flex
+        flex-direction: row
+        height: 360px
+        list-style: none
+        margin-left: -36px
+        margin-top: 42px
+@media (max-width: 768px)
+  body
+    .menu
+      width: 100%
+      padding: 0
+      .menu__logo
+        text-align: center
+    .main
+      width: 100%
+      .content
+        height: 844px
+        &__head
+          display: flex
+          flex-direction: column
+          justify-content: center
+          align-items: center
+        &__block
+          display: flex
+          flex-direction: column
+          justify-content: center
+          align-items: center
+          .content-block__wrap
+            .content-block-wrap__form
+              .content-block-wrap-form__wrapper
+                position: static
+              .content-block-wrap-form__box
+                position: static
+                width: 365px
+                margin-top: 30px
+                .content-block-wrap-сard__icon
+                  position: relative
+                  top: 33px
+                  right: 6px
+              .content-block-wrap-form__button
+                margin-top: 31px
+                text-align: center
+      .footer
+        height: 340px
+@media (max-width: 480px)
+  body
+    .menu
+      &__list
+        .menu__item
+          .menu__link
+            font-size: 14px
+    .main
+      .header
+        height: 200px
+      .content
+        height: 910px
+        .content__block
+          .content-block__wrap
+            .content-block-wrap__form 
+              display: flex
+              flex-direction: column
+              justify-content: center
+              align-items: center
+              .content-block-wrap-form__wrapper
+                display: flex
+                flex-direction: column
+                justify-content: center
+                align-items: center
+                width: 210px
+                .content-block-wrap-form__inner1
+                  .content-block-wrap-form__page
+                    .content-block-wrap-form__input
+                      width: 40px
+                .content-block-wrap-form__inner3
+                  .content-block-wrap-form__input2
+                    width: 203px
+              .content-block-wrap-form__box
+                width: 223px
+      .footer
+        height: 550px
+

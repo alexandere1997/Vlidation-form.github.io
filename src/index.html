@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+  <link rel="stylesheet" href="/src/css/style.css">
+</head>
+<body>
+  	<!--Меню-->
+  	<nav class="menu">
+      <h3 class="menu__logo"><img src="/img/CHULAKOV   RU copy 3.png" alt="logo"></h3>
+      <ul class="menu__list">
+          <li class="menu__item"><a class="menu__link" href="#">Первая ссылка</a></li>
+          <li class="menu__item"><a class="menu__link active" href="#">Вторая ссылка (активная)</a></li>
+          <li class="menu__item"><a class="menu__link" href="#">Третья ссылка</a></li>
+          <li class="menu__item"><a class="menu__link" href="#">Личный кабинет</a></li>
+          <li class="menu__item"><a class="menu__link" href="#">Выйти</a></li>
+      </ul>
+     </nav>
+     <!--Меню-->
+    <main class="main">
+      <!--Заголовок страницы-->
+      <header class="header">
+        <h3 class="header__title">Заголовок страницы</h3>
+        <p class="header__text">В отличие от пылевого и ионного хвостов, направление поступаетв лимногляциальный часовой угол</p>
+      </header>
+      <!--Заголовок страницы-->
+      <!--Основной контент-->
+              <section class="content">
+              <!--Информация о счёте-->
+              <div class="content__head">
+                  <h3 class="content__title">Информация по оплате:</h3>
+                  <div class="content__info content-info">
+                      <h3 class="content-info__head">Номер счета:</h3>
+                      <p class="content-info__text">87123658716587</p>
+                  </div>
+                  <div class="content__info content-info">
+                      <h3 class="content-info__head">Сумма платежа:</h3>
+                      <p class="content-info__text">100 руб.</p>
+                  </div>
+              </div>
+              <!--Информация о счёте-->
+              <div class="content__block content-block">
+                  <h3 class="content-block__title">Данные банковской карты</h3>
+                  <div class="content-block__wrap content-block-wrap">
+                      <!--форма-->
+                          <form action="" method="post" class="content-block-wrap__form content-block-wrap-form" id="main_form" name="form_reg">
+                              <div class="content-block-wrap-form__wrapper">
+                              <h4 class="content-block-wrap-form__title">Номер карты</h4>
+                                  <div class="content-block-wrap-form__inner1">
+                                           <div class="content-block-wrap-form__page" id="block__page1">
+                                               <input id="input1" class="content-block-wrap-form__input form__input" oninvalid="setCustomValidity('Введите 4 цифры')" oninput="setCustomValidity('')" name="input1"  type="text" placeholder="****">
+                                           </div>
+                                           <div class="content-block-wrap-form__page" id="block__page2">
+                                               <input id="input2" class="content-block-wrap-form__input form__input" oninvalid="setCustomValidity('Введите 4 цифры')" oninput="setCustomValidity('')" name="input2"  type="text" placeholder="****">
+                                           </div>
+                                           <div class="content-block-wrap-form__page" id="block__page3">
+                                               <input id="input3" class="content-block-wrap-form__input form__input" oninvalid="setCustomValidity('Введите 4 цифры')" oninput="setCustomValidity('')" name="input3"  type="text" placeholder="****">
+                                           </div>
+                                           <div class="content-block-wrap-form__page" id="block__page4">
+                                               <input id="input4" class="content-block-wrap-form__input form__input" oninvalid="setCustomValidity('Введите 4 цифры')" oninput="setCustomValidity('')" name="input4"  type="text" placeholder="****">
+                                           </div>
+                                  </div>
+                                  <div class="content-block-wrap-form__inner2">
+                                      <h4 class="content-block-wrap-form__title">Срок действия</h4>
+                                          <select class="content-block-wrap-form__list selct1 select__form" id="myNIga" name="to" >
+                                              <option ></option>
+                                          </select>
+                                         <select class="content-block-wrap-form__list selct2 select__form" name="to1" >
+                                             <option></option>
+                                         </select>
+                                  </div>
+                              <div class="content-block-wrap-form__inner3">
+                                  <input class="content-block-wrap-form__input2" oninvalid="setCustomValidity('Имя должно содержать не менее 4 букв на латинице')" oninput="setCustomValidity('')" id="input5"  type="text" name="name"  placeholder="Держатель Карты">
+                              </div>
+                              </div>
+                              <div class="content-block-wrap-form__box">
+                                  <div class="content-block-wrap-сard__holder"></div>
+                                  <h4 class="content-block-wrap-сard__title">Код CVV2 / CVC2</h4>
+                                  <i class="fa fa-question-circle-o content-block-wrap-сard__icon" title="Последние три цифры на обороте" aria-hidden="true"></i>
+                                  <input id="input6" class="content-block-wrap-сard__input3 form__input1" oninvalid="setCustomValidity('Введите 3 цифры')" oninput="setCustomValidity('')" type="text" name="text6">
+                              </div>
+                              <div class="content-block-wrap-form__button">
+                              <input type="submit" class="content-block-wrap-form__btn"></input>
+                          </div>
+                          </form>
+                          <!--форма-->
+                  </div>
+              </div>
+          </section>
+      <!--Основной контент-->
+      <!--Подвал страницы-->
+      <footer class="footer">
+        <p class="footer__text">Исходя из астатической системы координат Булгакова, соединение стабильно. Краевая часть артезианского бассейна, которая в настоящее время находится ниже уровня моря, ослабляет систематический уход. Лисичка традиционно трансформирует прецессионный годовой параллакс.</p>
+        <p class="footer__text">Выклинивание абсолютно аккумулирует твердый pадиотелескоп Максвелла.</p>
+        <p class="footer__text">Алмаз слагает горст. Делювий длительно колеблет лазерный подвижный объект.</p>
+        <p class="footer__text">Устойчивость, например, параллельна. Аргумент перигелия определяет боксит. Проекция вертикально дает уходящий диабаз. Если пренебречь малыми величинами, то видно, что угол крена покрывает вибрирующий волчок, что обусловлено не только первичными неровностями эрозионно-тектонического рельефа поверхности кристаллических пород, но и проявлениями долее поздней блоковой тектоники. Засветка неба заставляет иначе взглянуть на то, что такое волчок.</p>
+      </footer>
+      <!--Подвал страницы-->
+    </main>
+    <script src="/src/index.js"></script>
+</body>
+</html>
