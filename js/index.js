@@ -149,7 +149,6 @@ for(let speed of form__input) {
 let select__form = document.querySelectorAll(".select__form");
 
 for (const selectForm of select__form) {
-  console.log(selectForm);
     selectForm.addEventListener("change", () => {
     if(!selectForm.value){
       selectForm.style.border = "1px solid red";
